@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* h2 da navbar */
+#logo{
+    font-size: 2rem;
+}
+/* Tag para os links */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botão */
+.btn{
+    display: inline-block;
+    padding: 15px 75px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #111;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+
+.btn:hover{
+    background: #06224A;
+    color: #32F2FC;
+    cursor: pointer;
+}
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background: black;
+    color: #eee;
+}
+
+.headline{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.navbar-container{
+   display: flex;
+   width: 80%;
+   height: 100%;
+   justify-content: space-between;
+   margin: auto;
+   align-items: center;
+}
+
+.navbar-items{
+   display: flex;
+   padding: 20px;
+   text-transform: uppercase;
+   list-style: none;
+}
+
+.navbar-items li{
+    padding: 20px;
+}
+
+.navbar-items li:hover{
+    color: #32F2FC;
+    cursor: pointer;
+}
+
+/* Showcase */
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/showcase.jpg') no-repeat center center/cover;
+     /* Overlay */
+     background-color: rgba(0,0,0,0.6);
+     background-blend-mode: color;
+}
+
+#showcase .showcase-container{
+    text-align: center;
+}
+
+#showcase .showcase-container h2{
+    font-size: 2.2rem;
+}
+
+#showcase .showcase-container p{
+    font-size: 1rem;
+    padding: 7px 0;
+}
+
+/* About us */
+#features{
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px
+}
+
+.features-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/*  Portifolio*/
+#portifolio{
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#portifolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.portifolio-image {
+    display: inline-block;
+    width: 540px;
+    height: 360px;
+    border-radius: 5px;
+}
+
+/* Footer */
+#footer{
+    background: #222;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+    /* Resposividade para leptop */
+@media screen and (max-width: 1024px){
+   /* Logo é o Canapa Solutions */
+   #logo{
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    }
+    /* Navbar */
+    .navbar{
+        width: 100%;
+        height: 100px;
+    }
+    .navbar-items li{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    /* Showcase */
+    #showcase{
+        width: 100%;
+    }
+
+    #showcase .showcase-container{
+        width: 100%;
+    }
+    #showcase .showcase-container p{
+        font-size: 0.7rem;
+    }
+
+    #showcase .showcase-container h2{
+        font-size: 1.4rem;
+    }
+    /* About us */
+    #features{
+        width: 100;
+    }
+    .features-container{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .feature{
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+    }
+    /* Portifólio */
+    #portifolio{
+        width: 100%;
+    }
+    #portifolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portifolio-image{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+
+    /* Footer */
+    #footer{
+        font-size: 0.8rem
+    }
+}
+    /* Resposividade para tablet */
+@media screen and (max-width: 768px){
+     /* Logo é o Canapa Solutions */
+     #logo{
+        display: inline-block;
+        padding-left: 30px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    /* Navbar */
+    .navbar{
+        width: 100%;
+        height: 100px;
+    }
+    .navbar-items li{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    /* Showcase */
+    #showcase{
+        width: 100%;
+    }
+    
+    #showcase .showcase-container{
+        width: 100%;
+    }
+    #showcase .showcase-container p{
+        font-size: 0.7rem;
+    }
+
+    #showcase .showcase-container h2{
+        font-size: 1.4rem;
+    }
+    /* About us */
+    #features{
+        width: 100;
+    }
+    .features-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .feature{
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+    }
+    /* Portifólio */
+    #portifolio{
+        width: 100%;
+    }
+    #portifolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portifolio-image{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+
+    /* Footer */
+    #footer{
+        font-size: 0.8rem
+    }
+}
+    /* Resposividade para celular */
+@media screen and (max-width: 600px) {
+    /* Logo é o Canapa Solutions */
+    #logo{
+        display: inline-block;
+        padding-left: 30px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    /* Navbar */
+    .navbar{
+        width: 100%;
+        height: 150px;
+    }
+
+    .navbar-container{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .navbar-items{
+        display:-moz-grid-line;
+        width: 100%;
+    }
+
+    .navbar-items li{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    /* Showcase */
+    #showcase{
+        padding-top: 100px;
+        width: 100%;
+    }
+    
+    #showcase .showcase-container{
+        width: 100%;
+    }
+    #showcase .showcase-container p{
+        font-size: 0.7rem;
+    }
+
+    #showcase .showcase-container h2{
+        font-size: 1.4rem;
+    }
+    /* About us */
+    #features{
+        width: 100;
+    }
+    .features-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .feature{
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+    }
+    /* Portifólio */
+    #portifolio{
+        width: 100%;
+    }
+    #portifolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portifolio-image{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+
+    /* Footer */
+    #footer{
+        font-size: 0.8rem
+    }
+}
